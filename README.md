@@ -20,3 +20,7 @@ After the Flatten layer, we use the Dropout (0.5) layer to prevent the model fro
 Finally, towards the end, we use the Dense layer with 50 units and the activation function as ‘ReLu’.
 
 The last layer of our model will be another Dense Layer, with only two units and the activation function used will be the ‘Softmax’ function. The softmax function outputs a vector which will represent the probability distributions of each of the input units. Here, two input units are used. The softmax function will output a vector with two probability distribution values.
+
+After building the model, we compile the model and define the loss function and optimizer function. In this model, we use the ‘Adam’ Optimizer and the ‘Binary Cross Entropy’ as the Loss function for training purpose. Finally, the CNN model is trained for 20 epochs with two classes, one denoting the class of images with the face masks and the other without face masks.
+
+And it is deployed on flask & for the face detection, the Haar Feature-based Cascade Classifiers are used. 
